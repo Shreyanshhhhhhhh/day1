@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Form Validation</h1>
+    <form id="form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+          <small>Please provide a valid first name.</small>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+          <small>Please provide a valid last name.</small>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <small>Please provide a valid email.</small>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+          <small>Please provide a valid password.</small>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="City" required>
+          <small>Please provide a valid city.</small>
+        </div>
+        <div class="form-group">
+          <label for="select">Select any value</label>
+          <select id="select" name="option" required>
+            <option value="">Open this select menu</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+          <small>Please select an option.</small>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="file">Choose File</label>
+          <input type="file" id="file" name="file" required>
+          <small>Please select a file.</small>
+        </div>
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="checkbox" name="checkbox" required> Check this custom checkbox
+          </label>
+          <small>Please check this checkbox.</small>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="radio-label">
+          <input type="radio" name="radio" value="option1" required> Toggle this custom radio
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="radio" value="option2" required> Or toggle this other custom radio
+        </label>
+        <small>Please toggle a radio button.</small>
+      </div>
+      <button type="submit" id="submit">Submit form</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

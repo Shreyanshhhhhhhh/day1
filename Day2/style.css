@@ -1,0 +1,26 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+.bold-red {
+    font-weight: bold;
+    color: red;
+    font-family: 'Times New Roman';
+    font-size: 16px;
+}
+
+.centered {
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin:auto;
+}

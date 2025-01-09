@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .rating-container {
+    display: inline-block;
+  }
+  
+  .stars {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .star {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.2s;
+  }
+  
+  .star.orange {
+    color: #ffa500;
+  }
+  
+  .output {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
